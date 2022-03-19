@@ -1,17 +1,72 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
+  <q-page class="row justify-center items-center">
+
+      <div class="col-6">
+        <q-card class="q-pa-lg " style="height: 608px">
+          <div class="row full-height items-center q-gutter-sm">
+            <div class="col-5"></div>
+            <div class="col-6">
+              <div class="row q-gutter-sm justify-center">
+
+                <div class="col-12 text-center q-mb-md">
+                  <span class="text-h3">Авторизация</span>
+                </div>
+
+                <div class="col-5">
+                  <q-btn 
+                    no-caps
+                    unelevated 
+                    rounded 
+                    icon="" 
+                    color="grey-10" 
+                    label="Войти с Яндекс ID" />
+                </div>
+                <div class="col-5">
+                  <q-btn
+                    no-caps
+                    unelevated 
+                    rounded 
+                    icon="ion-logo-vk" 
+                    style="background: #5C82A7"
+                    class="text-white" 
+                    label="Войти с Вконтакте" />
+                </div>
+              
+
+                <div class="col-12 q-mt-xl">
+                  <q-input rounded outlined label="Логин">
+                    <template v-slot:prepend>
+                      <q-icon name="mdi-pencil" />
+                    </template>
+                  </q-input>
+                </div>
+                <div class="col-12 q-my-sm">
+                  <q-input rounded outlined type="password" label="Пароль">
+                    <template v-slot:prepend>
+                      <q-icon name="mdi-lock" />
+                    </template>
+                    <template v-slot:append>
+                      <q-icon name="mdi-eye-outline" />
+                    </template>
+                  </q-input>
+                </div>
+                <div class="col-12 q-mt-xl">
+                  <q-btn class="full-width" unelevated rounded color="grey-10" label="Войти" />
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </q-card>
+      </div>
+
+      <q-img class="absolute-bottom-right" width="213px" height="225px" src="~assets/ddos-guard_logo.jpg" />
+
   </q-page>
 </template>
 
 <script>
-import { defineComponent } from 'vue';
-
-export default defineComponent({
+export default ({
   name: 'PageIndex'
 })
 </script>
