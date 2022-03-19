@@ -1,62 +1,52 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <div class="row q-my-xl justify-center">
-      <div class="col-7 bg-grey-1 q-py-xl" style="border-radius:7px;">
-        <div class="row justify-around items-center">
-          <div class="col-4 bg-grey-11" style="width:150px;height:150px;border-radius:50%"></div>
-          <div class="col-4">
-            <p align="center" class="text-h5 q-py-xl">Member Login</p>
-            <q-form
-              @submit="onSubmit"
-              @reset="onReset"
-              class="q-gutter-md"
-            >
-              <q-input
-                rounded standout
-                label="Email"
-              >
-                <template v-slot:prepend>
-                  <q-icon name="email" />
-                </template>
-              </q-input>
-
-              <q-input
-                rounded standout
-                type="password"
-                label="Password"
-              >
-                <template v-slot:prepend>
-                  <q-icon name="lock" />
-                </template>
-              </q-input>
-              <div>
-                <q-btn unelevated rounded color="teal" class="full-width q-mt-lg" label="Войти"/>
+    <q-page class="justify-center items-center">
+      <div class="row">
+        <div class="col-6 bg-grey-11 q-pa-sm">
+          <div class="row">
+            <div class="col-6 q-my-xl"></div>
+            <div class="col-6 q-my-xl">
+              <div class="row justify-center">
+                <span class="text-h5">Авторизация</span>
               </div>
-              <div>
-                <q-btn unelevated rounded outline class="full-width">
-                  <q-avatar size="20px" class="q-mx-xs">
-                    <img src="../assets/yandex_logo.png">
-                  </q-avatar>
-                  Войти с Яндекс ID
-                </q-btn>
+              <div class="row q-pa-lg">
+                <div class="col-6">
+                  <q-btn unelevated rounded class="full-width" icon="" color="black" label="Войти с Яндекс ID"/>
+                </div>
+                <div class="col-6">
+                  <q-btn unelevated rounded class="full-width" icon="ion-logo-vk" color="primary" label="Войти с Вконтакте"/>
+                </div>
               </div>
-              <div>
-                <q-btn unelevated rounded outline class="full-width">
-                  <q-avatar size="20px" class="q-mx-xs">
-                    <img src="../assets/vk_logo.png">
-                  </q-avatar>
-                  Войти с Вконтакте
-                </q-btn>
+              <div class="row q-my-xl">
+                <div class="col-12">
+                  <q-input rounded standout label="Логин">
+                    <template v-slot:prepend>
+                      <q-icon name="mdi-pencil" />
+                    </template>
+                  </q-input>
+                </div>
+                <div class="col-12 q-my-sm">
+                  <q-input rounded standout type="password" label="Пароль">
+                    <template v-slot:prepend>
+                      <q-icon name="mdi-lock" />
+                    </template>
+                    <template v-slot:append>
+                      <q-icon name="mdi-eye-outline" />
+                    </template>
+                  </q-input>
+                </div>
+                <div class="col-12">
+                  <q-btn unelevated rounded class="full-width" color="grey-7" label="Войти"/>
+                </div>
               </div>
-              <p align="center"><a href="" style="text-decoration:none;color:white;">Forgot Username/Password?</a></p>
-            </q-form>
-            <q-item to="/registration" clickable v-ripple>
-              Create your Account
-            </q-item>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <div class="row q-mt-xl justify-end">
+        <q-img width="213px" height="225px" src="../assets/ddos-guard_logo.jpg"/>
+      </div>
+    </q-page>
   </q-layout>
 </template>
 
@@ -69,3 +59,12 @@ export default {
   }
 }*/
 </script>
+
+<style>
+
+body{
+  background:linear-gradient(249.89deg, #48D5DB -0.91%, #72BDF2 48.1%, #404FD7 101.38%);
+  font-family: 'Raleway';
+}
+
+</style>
