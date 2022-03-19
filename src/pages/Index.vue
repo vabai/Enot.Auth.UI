@@ -1,7 +1,7 @@
 <template>
   <q-page class="row justify-center items-center">
 
-      <div class="col-6">
+      <div class="col-12 col-md-8 col-lg-6">
         <q-card class="q-pa-lg " style="height: 608px">
           <div class="row full-height items-center q-gutter-sm">
             <div class="col-5"></div>
@@ -13,25 +13,27 @@
                 </div>
 
                 <div class="col-5">
-                  <q-btn 
+                  <q-btn
+                    padding="sm"
                     no-caps
-                    unelevated 
-                    rounded 
-                    icon="" 
-                    color="grey-10" 
+                    unelevated
+                    rounded
+                    icon=""
+                    color="grey-10"
                     label="Войти с Яндекс ID" />
                 </div>
                 <div class="col-5">
                   <q-btn
+                    padding="sm"
                     no-caps
-                    unelevated 
-                    rounded 
-                    icon="ion-logo-vk" 
+                    unelevated
+                    rounded
+                    icon="ion-logo-vk"
                     style="background: #5C82A7"
-                    class="text-white" 
+                    class="text-white"
                     label="Войти с Вконтакте" />
                 </div>
-              
+
 
                 <div class="col-12 q-mt-xl">
                   <q-input rounded outlined label="Логин">
@@ -60,7 +62,7 @@
         </q-card>
       </div>
 
-      <q-img class="absolute-bottom-right" width="213px" height="225px" src="~assets/ddos-guard_logo.jpg" />
+      <q-img class="absolute-bottom-right" style="opacity:.7" width="213px" height="225px" src="~assets/ddos-guard_logo.jpg" />
 
   </q-page>
 </template>
