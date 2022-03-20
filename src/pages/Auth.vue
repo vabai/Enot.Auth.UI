@@ -23,7 +23,7 @@
                   <q-card class="bg-grey-4 q-gutter-sm q-pb-md">
                     <div class="row">
                       <div class="col-5 q-mt-sm">
-                        <q-icon class="q-mx-xs" color="primary" name="mdi-email"/>Email
+                        <q-icon class="q-mx-xs" color="primary" name="mdi-email"/><b>Email</b>
                       </div>
                       <div class="col-7 q-mt-sm">
                         <p align="right">lazydumplings@mail.ru
@@ -32,7 +32,7 @@
                     </div>
                     <div class="row">
                       <div class="col-6">
-                        <q-icon class="q-mx-xs" color="primary" name="mdi-format-letter-case"/>Имя пользователя
+                        <q-icon class="q-mx-xs" color="primary" name="mdi-format-letter-case"/><b>Имя пользователя</b>
                       </div>
                       <div class="col-6">
                         <p align="right">Енот
@@ -41,7 +41,7 @@
                     </div>
                     <div class="row">
                       <div class="col-5">
-                        <q-icon class="q-mx-xs" color="primary" name="mdi-pencil"/>Логин
+                        <q-icon class="q-mx-xs" color="primary" name="mdi-pencil"/><b>Логин</b>
                       </div>
                       <div class="col-7">
                         <p align="right">Енотик
@@ -50,7 +50,7 @@
                     </div>
                     <div class="row">
                       <div class="col-5">
-                        <q-icon class="q-mx-xs" color="primary" name="mdi-lock"/>Пароль
+                        <q-icon class="q-mx-xs" color="primary" name="mdi-lock"/><b>Пароль</b>
                       </div>
                       <div class="col-7">
                         <p align="right">Обновлен 2 дня назад
@@ -59,7 +59,7 @@
                     </div>
                     <div class="row">
                       <div class="col-4">
-                        <q-icon class="q-mx-xs" color="primary" name="mdi-account"/>ФИО
+                        <q-icon class="q-mx-xs" color="primary" name="mdi-account"/><b>ФИО</b>
                       </div>
                       <div class="col-8">
                         <p align="right">Альберт Енотович Енотов
@@ -78,8 +78,8 @@
                             <q-img src="~assets/yandex_logo.png"/>
                           </q-avatar>
                           Войти с Яндекс ID
-                        </q-btn>
-                        <q-icon class="q-mx-xs" color="primary" name="mdi-tooltip-check"/>
+                      </q-btn>
+                      <q-icon class="q-mx-xs" color="primary" name="mdi-tooltip-check"/>
                     </div>
                     <div class="col-5">
                       <q-btn
@@ -98,7 +98,17 @@
                     <div class="row justify-between items-center">
                       <div class="col-5">Темная тема</div>
                       <div class="col-2">
-                        <q-toggle/>
+                        <q-toggle v-model="value" />
+                      </div>
+                    </div>
+                  </q-card>
+                  <q-card class="bg-grey-4 q-gutter-sm q-my-md">
+                    <div class="row text-h5 text-grey-6">
+                      <div class="col-12">
+                        accessToken: ajdhlasiugdsiad
+                      </div>
+                      <div class="col-12">
+                        refreshToken: asdasdhpoashd
                       </div>
                     </div>
                   </q-card>

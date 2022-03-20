@@ -19,8 +19,12 @@
                     unelevated
                     rounded
                     icon=""
-                    color="grey-10"
-                    label="Войти с Яндекс ID" />
+                    color="grey-10">
+                      <q-avatar class="q-mr-sm" size="15px">
+                        <q-img src="~assets/yandex_logo.png"/>
+                      </q-avatar>
+                    Войти с Яндекс ID
+                  </q-btn>
                 </div>
                 <div class="col-5">
                   <q-btn
@@ -31,10 +35,9 @@
                     icon="ion-logo-vk"
                     style="background: #5C82A7"
                     class="text-white"
-                    label="Войти с Вконтакте" />
+                    label="Войти с Вконтакте"
+                    href="https://oauth.vk.com/authorize?client_id=8108646&display=page&redirect_uri=http://localhost:3000/user/oauth/verify&scope=offline,profile,email&response_type=code&v=5.131" />
                 </div>
-
-
                 <div class="col-12 q-mt-xl">
                   <q-input rounded outlined label="Логин">
                     <template v-slot:prepend>
@@ -55,8 +58,10 @@
                 <div class="col-12 q-mt-xl">
                   <q-btn class="full-width" unelevated rounded color="grey-10" label="Войти" />
                 </div>
+                <q-item to="/registration">
+                  Не зарегистрированы?&nbsp;<span style="text-decoration:underline;">Регистрация</span>
+                </q-item>
               </div>
-
             </div>
           </div>
         </q-card>
